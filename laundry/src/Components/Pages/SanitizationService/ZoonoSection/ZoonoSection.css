@@ -1,0 +1,123 @@
+.zoono-section {
+  width: 100%;
+  padding: 20px 5%;
+  background: #fff;
+}
+
+.zoono-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.zoono-left {
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+}
+
+.zoono-left img {
+  width: 200px;
+  object-fit: contain;
+}
+
+.zoono-text h2 {
+  color: #5a1a5f;
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.zoono-text p {
+  color: #555;
+  line-height: 1.7;
+  margin-bottom: 20px;
+}
+
+.zoono-text ul {
+  padding-left: 18px;
+}
+
+.zoono-text li {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* RIGHT */
+.zoono-right {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  text-align: center;
+}
+
+.zoono-card h4 {
+  margin-top: 15px;
+  color: #333;
+  font-size: 18px;
+}
+
+.zoono-card p {
+  margin-top: 10px;
+  color: #777;
+  font-size: 14px;
+}
+
+/* CIRCLES */
+.circle {
+  width: 120px;
+  height: 120px;
+  border: 3px solid #5a1a5f;
+  border-radius: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+}
+
+.circle span {
+  font-size: 28px;
+  font-weight: 700;
+  color: #5a1a5f;
+}
+
+.circle small {
+  font-size: 12px;
+  color: #ff6a00;
+  font-weight: 600;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .zoono-container {
+    grid-template-columns: 1fr;
+    gap: 50px;
+  }
+
+  .zoono-right {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .zoono-left {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .zoono-right {
+    grid-template-columns: 1fr;
+  }
+
+  .zoono-text h2 {
+    font-size: 28px;
+  }
+
+  .circle {
+    width: 100px;
+    height: 100px;
+  }
+}

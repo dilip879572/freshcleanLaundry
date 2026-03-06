@@ -1,0 +1,115 @@
+.danger-section {
+  width: 100%;
+  padding: 30px 5%;
+  background: linear-gradient(180deg, #f1efef, #fbfbfb);
+  color: #ddd;
+}
+
+/* TITLE */
+.danger-section h2 {
+  text-align: center;
+  font-size: 34px;
+  color: #042351;
+  margin-bottom: 60px;
+  font-weight: 600;
+}
+
+/* LAYOUT */
+.danger-container {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 50px;
+  align-items: stretch;
+}
+
+/* LEFT CARD */
+.danger-info {
+  background: #164887;
+  border-radius: 16px;
+  padding: 40px;
+  color: #ffffff;
+}
+
+.danger-info h3 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.danger-info p {
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+/* RIGHT GRID */
+.danger-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 25px;
+}
+
+/* SMALL CARDS */
+.danger-card {
+  background: #164887;  border-radius: 14px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.danger-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.5);
+}
+
+/* ICON */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  background: #164887;
+  color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 15px;
+}
+
+/* TEXT */
+.danger-card h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.danger-card p {
+  font-size: 14px;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .danger-container {
+    grid-template-columns: 1fr;
+  }
+
+  .danger-section h2 {
+    font-size: 30px;
+  }
+
+  .danger-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 500px) {
+  .danger-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .danger-info {
+    padding: 25px;
+  }
+
+  .danger-info h3 {
+    font-size: 22px;
+  }
+}

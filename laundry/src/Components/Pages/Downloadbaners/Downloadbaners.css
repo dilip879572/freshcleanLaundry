@@ -1,0 +1,282 @@
+/* SECTION */
+.download-section {
+  background: linear-gradient(135deg, white, white);
+  padding: 30px 0;
+  overflow: hidden;
+}
+
+/* CONTENT */
+.download-content {
+  color: #032852;
+}
+
+/* TITLES */
+.download-title {
+  font-size: 30px;
+  text-align: start;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.download-subtitle {
+  font-size: 16px;
+  opacity: 0.9;
+  margin-bottom: 25px;
+  max-width: 480px;
+}
+
+/* FEATURES LIST */
+.features-list {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.features-list li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 12px;
+  font-family: "Roboto", sans-serif;
+  font-size: 17px;
+  line-height: 28px;
+}
+
+.features-list svg {
+  font-size: 22px;
+  color: #174ea3;
+  min-width: 22px;
+}
+
+/* STORE BUTTONS */
+.store-buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.store-buttons img {
+  height: 50px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.store-buttons img:hover {
+  transform: scale(1.05);
+}
+
+/* IMAGE */
+.image-wrapper {
+  text-align: center;
+}
+
+.app-image {
+  width: 100%;
+  max-width: 420px;
+  animation: float 4s ease-in-out infinite;
+}
+
+/* FLOAT ANIMATION */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .download-title {
+    font-size: 26px;
+    text-align: center;
+  }
+
+  .download-subtitle {
+    text-align: center;
+    color: #174ea3;
+    margin: 0 auto 25px;
+  }
+
+  .features-list {
+    align-items: center;
+  }
+
+  .features-list li {
+    justify-content: center;
+    text-align: left;
+  }
+
+  .store-buttons {
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .app-image {
+    max-width: 280px;
+    margin-top: 30px;
+  }
+}
+
+/* ================= LARGE SCREENS ================= */
+@media (min-width: 1200px) {
+  .download-title {
+    font-size: 40px;
+  }
+
+  .app-image {
+    max-width: 480px;
+  }
+}
+
+
+
+
+.faq-container {
+  padding: 30px 20px;
+  background: #f7f7f7;
+}
+.title {
+    font-family: "Roboto", Sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: capitalize;
+    font-style: normal;
+    text-decoration: none;
+    line-height: 1.2em;
+    letter-spacing: 0px;
+    word-spacing: 0em;
+    color: #062951;
+  }
+
+.subtitle {
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+    color: #062951;
+}
+
+.faq-wrapper {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  gap: 40px;
+}
+
+.faq-left {
+  flex: 1;
+}
+
+.faq-left {
+  width: 100%;
+  max-width: 500px;   /* Desktop par limit rahe */
+}
+
+.faq-image {
+  width: 100%;
+  height: auto;      /* Aspect ratio maintain kare */
+  display: block;
+  border-radius: 10px;
+  object-fit: cover;
+}
+
+/* Mobile ke liye */
+@media (max-width: 768px) {
+  .faq-left {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .faq-image {
+    border-radius: 8px;
+  }
+}
+
+
+.faq-right {
+  flex: 1;
+}
+
+.faq-item {
+  background: #fff;
+  border-radius: 6px;
+  margin-bottom: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  overflow: hidden;
+}
+
+.faq-question {
+  padding: 20px 20px;
+  font-weight: 600;
+    color: #062951; 
+     display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+
+
+
+.faq-question-maxima {
+  padding: 15px 20px;
+  font-weight: 600;
+    color: #062951; 
+     display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+}
+
+.faq-answer {
+  padding: 22px;
+  border-top: 1px solid #eee;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+.icon {
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 15px;
+    color: orangered;
+  }
+
+.link {
+  color: orange;
+  cursor: pointer;
+}
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .faq-wrapper {
+    flex-direction: column;
+  }
+
+  .title {
+    font-size: 24px;
+  }
+}
+
+
+.book-btn-downold {
+  background-color: #164887 !important;;
+  border: 2px solid #fcfcfc !important;
+  color: white !important;
+  padding: 20px 26px;
+  font-weight: 500;
+  font-size: 30px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+.book-btn-downold:hover {
+  background: #f6f6f6 !important;
+   border: 2px solid #2c5bf4 !important;
+  color: rgb(18, 63, 239) !important;
+}
+
+button.book-btn-downold.btn.btn-primary {
+    padding: 13px 86px;
+}

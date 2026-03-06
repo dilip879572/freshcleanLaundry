@@ -1,0 +1,156 @@
+.how-it-works {
+  text-align: center;
+  padding: 80px 8%;
+  background: #fff;
+}
+
+/* HEADINGS */
+.how-title {
+  color: #4b1365;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.how-subtitle {
+  color: #4b1365;
+  margin-top: 10px;
+  font-weight: 600;
+}
+
+/* DESCRIPTION */
+.how-desc {
+  max-width: 800px;
+  margin: 20px auto 60px;
+  color: #333;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* STEPS */
+.how-steps {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  flex-wrap: wrap;
+}
+
+
+
+/* ICON */
+.icon_work {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin: 0 auto 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+}
+
+.purple {
+  background: #e6d9f2;
+  color: #4b1365;
+}
+
+.orange {
+  background: #ffd8b5;
+  color: #ff7a18;
+}
+
+.gray {
+  background: #e1d7e3;
+  color: #555;
+}
+
+/* TEXT */
+.step h5 {
+  color: #4b1365;
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+
+.step {
+  max-width: 300px;
+  padding: 20px;
+  border-radius: 16px;
+  transition: all 0.35s ease;
+  cursor: pointer;
+}
+
+.step:hover {
+  transform: translateY(-12px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* Icon animation */
+.step:hover .icon_work {
+  transform: scale(1.1) rotate(5deg);
+}
+
+/* Title color on hover */
+.step:hover h5 {
+  color: #ff7a18;
+}
+
+/* Smooth icon transition */
+.icon_work {
+  transition: all 0.35s ease;
+}
+
+.step p {
+  font-size: 14px;
+  color: #444;
+  line-height: 1.6;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 768px) {
+  .how-it-works {
+    padding: 60px 6%;
+  }
+
+  .how-title {
+    font-size: 28px;
+  }
+
+  .how-desc {
+    font-size: 14px;
+    margin-bottom: 40px;
+  }
+
+  .how-steps {
+    gap: 30px;
+  }
+
+  .step {
+    max-width: 100%;
+  }
+}
+
+/* ================= SMALL MOBILE ================= */
+@media (max-width: 480px) {
+  .how-title {
+    font-size: 24px;
+  }
+
+  .how-subtitle {
+    font-size: 14px;
+  }
+
+  .icon_work {
+    width: 60px;
+    height: 60px;
+    font-size: 24px;
+  }
+
+  .step h5 {
+    font-size: 15px;
+  }
+
+  .step p {
+    font-size: 13px;
+  }
+}

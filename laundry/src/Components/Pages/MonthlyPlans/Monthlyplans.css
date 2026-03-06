@@ -1,0 +1,115 @@
+.monthly-section {
+  width: 100%;
+  padding: 80px 5%;
+  background: #f9f9f9;
+}
+
+.monthly-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+/* LEFT IMAGE WRAPPER */
+.monthly-images {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+/* SINGLE CARD */
+.card-single {
+  /* width: 420px; */
+  max-width: 100%;
+  border-radius: 5px;
+  overflow: hidden;
+  /* box-shadow: 0 15px 40px rgba(0, 0, 0, 0.25); */
+  background: white;
+}
+
+.card-single img {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: contain;
+}
+
+/* RIGHT CONTENT */
+.monthly-content {
+  flex: 1;
+  max-width: 500px;
+}
+
+.monthly-content h2 {
+  font-size: 42px;
+  color: #5b2c6f;
+  margin-bottom: 20px;
+}
+
+.monthly-content h4 {
+  font-size: 20px;
+  color: #6c3483;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.monthly-content p {
+  font-size: 16px;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.vat-text {
+  color: #777;
+  font-size: 14px;
+}
+
+/* ========================= */
+/* RESPONSIVE DESIGN */
+/* ========================= */
+
+@media (max-width: 992px) {
+  .monthly-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .monthly-content {
+    max-width: 100%;
+  }
+
+  .monthly-content h2 {
+    font-size: 32px;
+  }
+
+  .card-single {
+    width: 260px;
+  }
+}
+
+@media (max-width: 480px) {
+  .monthly-section {
+    padding: 50px 20px;
+  }
+
+  .card-single {
+    width: 220px;
+    border-radius: 15px;
+  }
+
+  .monthly-content h2 {
+    font-size: 26px;
+  }
+
+  .monthly-content h4 {
+    font-size: 16px;
+  }
+
+  .monthly-content p {
+    font-size: 14px;
+  }
+}

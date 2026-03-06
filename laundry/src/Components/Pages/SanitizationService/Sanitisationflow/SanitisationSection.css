@@ -1,0 +1,132 @@
+.sanitisation-section {
+  width: 100%;
+  padding: 80px 5%;
+  background: #fff;
+}
+
+.sanitisation-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT SIDE */
+.sanitisation-image {
+  position: relative;
+  overflow: hidden;
+  border-radius: 4px;
+}
+
+.sanitisation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Badge */
+.badge {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: #5a1a5f;
+  color: white;
+  padding: 10px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  z-index: 5;
+}
+
+.badge span {
+  color: #ff6a00;
+}
+
+/* Smoke effect */
+.smoke {
+  position: absolute;
+  inset: 0;
+  background: url("https://i.imgur.com/6o5V7QK.png") center/contain no-repeat;
+  opacity: 0.35;
+  pointer-events: none;
+}
+
+/* Bottom Bar */
+.bottom-bar {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #5a1a5f;
+  color: white;
+  text-align: right;
+  padding: 10px 20px;
+  font-size: 13px;
+}
+
+/* RIGHT SIDE */
+.sanitisation-content h2 {
+  font-size: 42px;
+  color: #5a1a5f;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.sanitisation-content h2 span {
+  color: #ff6a00;
+  font-weight: 700;
+}
+
+.subtitle {
+  margin-top: 5px;
+  color: #03174b;
+  font-size: 16px;
+}
+
+.desc {
+  margin: 10px 0;
+  color: #444;
+  line-height: 1.7;
+}
+
+.sanitisation-content ul {
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+
+.sanitisation-content li {
+  margin-bottom: 10px;
+  color: #555;
+  text-align: start;
+}
+
+.footer-text {
+  font-weight: 600;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .sanitisation-container {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .sanitisation-content h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 480px) {
+  .sanitisation-section {
+    padding: 50px 20px;
+  }
+
+  .badge {
+    font-size: 12px;
+    padding: 8px 14px;
+  }
+
+  .sanitisation-content h2 {
+    font-size: 26px;
+  }
+}

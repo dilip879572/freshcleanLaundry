@@ -1,0 +1,12 @@
+.maincontainer-temas{
+      background: #ffffff !important;
+  /* display: flex; */
+  /* align-items: center; */
+  overflow-y: hidden;
+  padding: 60px 50px;
+}
+.mainhader-point{
+    font-size: 35px;
+    color: brown;
+    font-weight: bold;
+}

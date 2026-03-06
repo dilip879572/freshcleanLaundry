@@ -1,0 +1,89 @@
+.carpet-section {
+  width: 100%;
+  padding: 70px 5%;
+  background: linear-gradient(180deg, #d7d8d9, #bfc3d2);
+  color: #fff;
+  text-align: center;
+}
+
+/* Title */
+.carpet-section h2 {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 60px;
+  color: #092b89;
+}
+
+/* Grid */
+.carpet-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/* Card */
+.carpet-card {
+  background: #164887;
+  border-radius: 16px;
+  padding: 25px;
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+}
+
+.carpet-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+}
+
+/* Image */
+.image-box {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.image-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.carpet-card:hover img {
+  transform: scale(1.1);
+}
+
+/* Text */
+.carpet-card h3 {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.carpet-card p {
+  color: white;
+  line-height: 1.6;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .carpet-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .carpet-section h2 {
+    font-size: 32px;
+  }
+}
+
+@media (max-width: 500px) {
+  .carpet-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .carpet-section h2 {
+    font-size: 26px;
+  }
+}

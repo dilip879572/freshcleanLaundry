@@ -1,0 +1,152 @@
+.wash-section {
+  width: 100%;
+  padding: 20px 5%;
+  background: #fff;
+}
+
+.wash-title {
+  font-size: 36px;
+  color: #5b2c6f;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+/* LAYOUT */
+.shirtsmonths-container {
+  display: flex;
+  max-width: 1200px;
+  margin: auto;
+  background: #5b1a63;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.Shirts-right {
+  width: 40%;
+  background: #5b1a63;
+  display: flex;
+  justify-content: center;
+  padding: 12px;
+}
+
+
+/* 
+.wash-logo {
+  font-weight: 700;
+  font-size: 22px;
+  margin-bottom: 30px;
+} */
+
+
+
+
+
+.bag img {
+  width: 100%;
+  display: block;
+}
+
+.bag p {
+  position: absolute;
+  bottom: 30px;
+  left: 25px;
+  font-size: 12px;
+  text-align: center;
+  color: #fff;
+}
+
+/* RIGHT SIDE */
+.wash-right {
+  width: 60%;
+  padding: 20px;
+  color: #fff;
+}
+
+.wash-right h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.wash-list-price {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.wash-list-price li {
+  margin-bottom: 8px;
+  text-align: start;
+  font-size: 15px;
+}
+
+/* T&C LIST */
+.wash-right h5 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.wash-list {
+  padding-left: 18px;
+  margin-bottom: 25px;
+}
+
+.wash-list li {
+  margin-bottom: 6px;
+  text-align: start;
+  font-size: 14px;
+}
+
+/* SUBSCRIBE BOX */
+.subscribe-box {
+  border-top: 1px solid rgba(255, 255, 255, 0.4);
+  font-size: 14px;
+  text-align: start;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .shirtsmonths-container {
+    flex-direction: column;
+  }
+
+  .wash-left,
+  .wash-right {
+    width: 100%;
+  }
+
+  .wash-card {
+    text-align: center;
+  }
+
+  .bag img {
+    margin: auto;
+  }
+
+  .bag p {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 480px) {
+  .wash-title {
+    font-size: 26px;
+  }
+
+  .wash-right {
+    padding: 25px;
+  }
+
+  .wash-card h3 {
+    font-size: 22px;
+  }
+
+  .wash-list-price li,
+  .tc-list li,
+  .subscribe-box {
+    font-size: 13px;
+  }
+}

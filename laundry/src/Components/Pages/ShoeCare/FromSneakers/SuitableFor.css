@@ -1,0 +1,99 @@
+.fromsneakers-section {
+  background: #ffffff;
+  padding: 20px 60px;
+  text-align: center;
+}
+
+.dirham-symbol {
+     font-family: 'UAESymbol', sans-serif !important;
+    font-size: calc(100% - 2px) !important;
+    top: -2px;
+    position: relative;
+}
+   
+.suitable-section h2 {
+  font-size: 32px;
+ color: #062951;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.subtitle {
+  max-width: 650px;
+  margin: auto;
+  text-align: center;
+   color: #062951;
+  margin-bottom: 50px;
+}
+
+.fromsneakers-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.fromsneakers-card {
+  background: transparent;
+  padding: 10px;
+    background-color: #FFF7F2;
+    border-radius: 15px;
+
+  transition: all 0.35s ease;
+}
+
+.fromsneakers-card:hover {
+  transform: translateY(-10px);
+}
+
+.fromsneakers-box {
+  /* width: 150px; */
+  height: 250px;
+  margin: auto;
+border-radius: 10%;  
+padding: 20px 20px;
+overflow: hidden;
+  /* box-shadow: 0 15px 30px rgba(0,0,0,0.15); */
+  transition: all 0.4s ease;
+}
+
+.fromsneakers-card:hover .fromsneakers-box {
+  /* border-radius: 60px 30px 30px 60px; */
+  transform: scale(1.05);
+}
+
+.fromsneakers-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.fromsneakers-card h3 {
+    margin-top: 2px;
+    font-weight: 600;
+ color: #062951;
+    font-family: serif;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.fromsneakers-card p {
+  font-size: 17px;
+color: #062951;
+  line-height: 1.6;
+  margin-top: 10px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .fromsneakers-grid {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media (max-width: 576px) {
+  .fromsneakers-grid {
+    grid-template-columns: 1fr;
+  }
+}

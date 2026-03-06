@@ -1,0 +1,128 @@
+.accordion-wrapper {
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Card */
+.accordion-card {
+  background: #fff;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.06);
+  overflow: hidden;
+}
+
+/* Header */
+.accordion-header {
+display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 14px 24px;
+    cursor: pointer;
+    background: #eceaea;
+}
+
+.left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #6b005f;
+}
+
+.icon {
+  font-size: 26px;
+  color: #0b1ef3;
+}
+
+.symbol {
+  font-size: 28px;
+  color: #888;
+}
+
+/* Body */
+.accordion-body {
+  padding: 15px 20px;
+  animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Table */
+/* table {
+  width: 100%;
+  border-collapse: collapse;
+} */
+
+
+
+table {
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 15px;
+    border-collapse: collapse;
+    border-spacing: 0;
+    border-radius: 5px;
+}
+
+.monthaly{
+    font-size: 30px;
+    line-height: 43px;
+    font-weight: bold;
+    text-align: justify;
+    color: #5E2D61;
+}
+
+td {
+padding: 12px 0;
+text-align: start;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+}
+thead tr th{
+    text-align: justify;
+    color: #ff6a00;
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+td:hover {
+padding: 12px 0;
+text-align: start;
+  border-top: 1px solid #ddd;
+  font-size: 15px;
+   background-color: azure;
+  color: #333;
+}
+/* Animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-5px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .accordion-header {
+    padding: 15px;
+  }
+
+  .left {
+    font-size: 16px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+
+  th,
+  td {
+    font-size: 14px;
+  }
+}

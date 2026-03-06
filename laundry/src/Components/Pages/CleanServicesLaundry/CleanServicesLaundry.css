@@ -1,0 +1,149 @@
+.how-it-works-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+  text-align: center;
+  font-family: 'Arial', sans-serif;
+}
+
+.how-it-works-header h2 {
+  color: #3e0c50;
+  margin-bottom: 10px;
+}
+
+.how-it-works-header .sub-title {
+  color: #3e0c50;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.how-it-works-header .desc {
+  color: #000;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 16px;
+}
+
+.steps-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+}
+
+.step-card-servicesLaundry {
+  flex: 1 1 280px;
+  max-width: 400px;
+  background: #fff;
+  padding: 10px;
+  border-radius: 14px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.step-card-servicesLaundry:hover {
+  transform: translateY(-8px);
+}
+
+.icon-circle {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  color: #3e0c50;
+  font-size: 36px;
+}
+
+.step-card-servicesLaundry h3 {
+  font-size: 20px;
+  font-weight: 600;
+  color: #3e0c50;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.step-card-servicesLaundry p {
+  /* font-size: 15px; */
+  color: #333;
+font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+}
+
+/* Responsive */
+
+
+.laundry-steps-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 40px;
+  padding: 60px 80px;
+  background: #ffffff;
+}
+
+/* IMAGE */
+.laundry-image img {
+  width: 100%;
+  max-width: 520px;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.laundry-content {
+  max-width: 600px;
+}
+
+.laundry-content h2 {
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  color: #111;
+}
+
+.laundry-content p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: start;
+  color: #444;
+  margin-bottom: 18px;
+}
+
+.laundry-content p strong {
+  font-weight: 600;
+  color: #000;
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .laundry-steps-section {
+    padding: 40px;
+  }
+    .steps-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .laundry-steps-section {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  .laundry-image img {
+    max-width: 100%;
+  }
+
+  .laundry-content h2 {
+    font-size: 22px;
+  }
+    .steps-container {
+    flex-direction: column;
+    gap: 20px;
+  }
+}

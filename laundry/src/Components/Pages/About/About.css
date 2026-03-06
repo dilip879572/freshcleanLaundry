@@ -1,0 +1,131 @@
+.container-about{
+    background-image: url("https://5asec.ae/wp-content/uploads/2020/06/5asec_50years-1.jpg?id=814");
+        background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    height: 400px;
+}
+.about-header
+{
+     text-align: start;
+    color: rgb(3, 29, 77);
+    font-weight: 800;
+    font-size: 40px;
+    /* padding: 173px 7px; */
+
+
+}
+.second-container{
+    padding: 60px 7px;
+}
+.second-header-wrapper {
+  padding: 20px;
+}
+
+.second-header h3 {
+  font-size: 36px;
+  font-weight: bold;
+}
+
+.counter {
+  color: red;
+  font-size: 40px;
+  margin-right: 8px;
+}
+
+.second-header h4 {
+  text-align: center;
+  font-size: 18px;
+  color: #555;
+}
+
+/* DOT REMOVE */
+.stats-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.stats-list li {
+  font-size: 18px;
+  text-align: center;
+  padding: 6px 0;
+}
+
+
+.five-sec-wrapper {
+  display: flex;
+  min-height: 300px;
+  background: #fff;
+}
+
+/* LEFT MENU */
+.five-sec-menu {
+  width: 260px;
+  background: linear-gradient(180deg, #5c104b, #3b0733);
+  padding: 20px 0;
+}
+
+.menu-item {
+  color: white;
+  padding: 16px 20px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-left: 5px solid transparent;
+}
+
+.menu-item:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.menu-item.active {
+  background: #2a0223;
+  border-left: 5px solid orange;
+}
+
+/* RIGHT CONTENT */
+.five-sec-content {
+  flex: 1;
+  padding: 40px;
+}
+
+.five-sec-content h2 {
+  color: #5c104b;
+  font-size: 28px;
+  text-align: start;
+  margin-bottom: 15px;
+}
+
+.five-sec-content p {
+  color: #555;
+  text-align: start;
+  line-height: 1.6;
+}
+
+.extra-text {
+  margin-top: 10px;
+  font-weight: 500;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+  .five-sec-wrapper {
+    flex-direction: column;
+  }
+
+  .five-sec-menu {
+    width: 100%;
+    display: flex;
+  }
+
+  .menu-item {
+    flex: 1;
+    text-align: center;
+    border-left: none;
+    border-bottom: 4px solid transparent;
+  }
+
+  .menu-item.active {
+    border-bottom: 4px solid orange;
+  }
+}

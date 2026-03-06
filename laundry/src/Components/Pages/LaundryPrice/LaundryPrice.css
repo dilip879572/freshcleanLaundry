@@ -1,0 +1,174 @@
+.laundry-price-section {
+ background: #164887;
+  padding: 40px 30px;
+  color: #fff;
+}
+
+.laundry-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+/* IMAGE SECTION */
+.image-section {
+  position: relative;
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.image {
+  border-radius: 20px;
+  object-fit: cover;
+}
+
+.image-large {
+  width: 100%;
+}
+
+.image-small {
+  width: 220px;
+  position: absolute;
+  right: -40px;
+  bottom: -30px;
+}
+
+/* CONTENT */
+.content-section {
+  flex: 1;
+}
+
+.content-section h2 {
+  font-size: 36px;
+  margin-bottom: 15px;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.price-listlaundryprice {
+  padding-left: 20px;
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+.price-listlaundryprice li {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+button.btn.phone-btn{
+     padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: white;
+  background-color: #fd690d !important;
+}
+
+
+button.btn.phone-btn:hover{
+     padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  gap: 8px;
+  color: rgb(44, 104, 244);
+  background-color: #f7fafd;
+}
+
+
+
+button.btn.whatsapp-btn:hover{
+     padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  border: 1px solid white;
+  gap: 8px;
+  color: rgb(0, 0, 0);
+  background-color: #f5870a;
+}
+
+button.btn.whatsapp-btn{
+     padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: rgb(23, 23, 23);
+  border:  1px solid white;
+  background-color: #ffffff !important;
+}
+/* BUTTONS */
+.button-group {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.btn {
+  padding: 14px 22px;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  border: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.phone-btn {
+  background-color: #f37021;
+  color: #fff;
+}
+
+.whatsapp-btn {
+  background-color: #fff;
+  color: #333;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .laundry-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .image-section {
+    margin-bottom: 40px;
+  }
+
+  .image-small {
+    position: static;
+    margin-top: 20px;
+  }
+
+  .content-section h2 {
+    font-size: 28px;
+  }
+}
+
+
+

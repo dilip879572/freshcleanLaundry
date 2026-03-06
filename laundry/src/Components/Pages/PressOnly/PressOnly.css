@@ -1,0 +1,142 @@
+.pressonly-wrap {
+  width: 100%;
+  background: #164887;}
+
+.pressonly-container {
+  max-width: 1400px;
+  margin: auto;
+  display: flex;
+  align-items: stretch;
+  min-height: 420px;
+}
+
+/* LEFT IMAGE */
+.pressonly-image {
+  flex: 1;
+  overflow: hidden;
+}
+
+.pressonly-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* RIGHT CONTENT */
+.pressonly-content {
+  flex: 1;
+  background: #164887;
+  color: white;
+  padding: 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.pressonly-content h2 {
+  font-size: 40px;
+  font-weight: 800;
+  text-align: start;
+  margin-bottom: 25px;
+}
+
+.pressonly-content p {
+  font-size: 16px;
+  line-height: 1.7;
+  text-align: start;
+  max-width: 600px;
+  margin-bottom: 40px;
+}
+
+/* BUTTONS */
+.pressonly-buttons {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.btn-book {
+  background: #5b1f5d;
+  color: white;
+  border: none;
+  padding: 14px 60px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-book:hover {
+   background: #5b1f5d;
+}
+
+.btn-price {
+  background: white;
+  color: #5b1f5d;
+  border: none;
+  padding: 14px 60px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.btn-price:hover {
+  background: #eee;
+}
+
+/* ------------------ RESPONSIVE ------------------ */
+
+@media (max-width: 1024px) {
+  .pressonly-content {
+    padding: 40px;
+  }
+
+  .pressonly-content h2 {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  .pressonly-container {
+    flex-direction: column;
+  }
+
+  .pressonly-image {
+    height: 260px;
+  }
+
+  .pressonly-image img {
+  width: 100%;
+  height: 350px;
+  object-fit: cover;
+  display: block;
+}
+  .pressonly-content {
+    padding: 30px;
+    text-align: center;
+  }
+
+  .pressonly-content p {
+    max-width: 100%;
+  }
+
+  .pressonly-buttons {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .btn-book,
+  .btn-price {
+    width: 100%;
+    padding: 14px 0;
+  }
+
+  .pressonly-content h2 {
+    font-size: 28px;
+  }
+}

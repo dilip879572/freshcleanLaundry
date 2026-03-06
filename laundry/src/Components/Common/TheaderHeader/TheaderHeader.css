@@ -1,0 +1,62 @@
+.theaderHeader {
+  width: 100%;
+  background: #f97316; /* Orange banner */
+  overflow: hidden;
+  padding: 8px 0;
+}
+
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  animation: scroll-left 18s linear infinite;
+}
+
+.marquee-content span {
+  white-space: nowrap;
+  color: #fff;
+  font-size: 14px;
+  padding: 0 12px;
+}
+
+.divider {
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.code {
+  background: rgba(255, 255, 255, 0.2);
+  padding: 2px 8px;
+  border-radius: 4px;
+  margin-left: 5px;
+}
+
+/* Animation */
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Mobile */
+@media (max-width: 576px) {
+  .marquee-content span {
+    font-size: 12px;
+    padding: 0 8px;
+  }
+}
+
+/* Desktop */
+@media (min-width: 992px) {
+  .marquee-content span {
+    font-size: 15px;
+  }
+}

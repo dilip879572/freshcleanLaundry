@@ -1,0 +1,143 @@
+.process-section {
+  width: 100%;
+  padding: 30px 5%;
+  background: linear-gradient(180deg, #fdfeff, #fefeff);
+  color: #ccc;
+  text-align: center;
+}
+.process-container{
+     width: 100%;
+  padding: 10px 5%; 
+  color: #ccc;
+  text-align: center;
+}
+
+/* TITLE */
+.process-section h2 {
+  font-size: 38px;
+  font-weight: 600;
+  margin-bottom: 80px;
+  color:  #164887;
+}
+
+/* TRACK */
+.process-track {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+/* CONNECT LINE */
+.process-track::before {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 5%;
+  right: 5%;
+  height: 4px;
+  background: linear-gradient(to right, #f9770c, #f5800a);
+  z-index: 0;
+}
+
+/* STEP */
+.process-step {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 160px;
+}
+
+/* CIRCLE WRAPPER */
+.process-circle-wrap {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f06d08, #e77f09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+/* ICON CIRCLE */
+.process-icon {
+  width: 95px;
+  height: 95px;
+  background: #164887;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  transition: transform 0.3s ease, background 0.3s ease;
+}
+
+/* LABEL */
+.process-step p {
+  font-size: 17px;
+  color: #010a72;
+  font-weight: 400;
+  text-align: center;
+  max-width: 120px;
+}
+
+/* HOVER */
+.process-step:hover .circle-icon {
+  transform: scale(1.1);
+  background: #042071;
+  color: white;
+}
+
+.process-step:hover p {
+  color: #071f70;
+}
+
+/* DESCRIPTION */
+.process-desc {
+  max-width: 900px;
+  margin: 30px auto 0;
+  color: #1a48fd;
+  line-height: 1.8;
+  font-size: 14px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .process-track {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .process-track::before {
+    display: none;
+  }
+
+  .process-step {
+    margin-bottom: 40px;
+  }
+
+  .process-section h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 480px) {
+  .process-circle-wrap {
+    width: 90px;
+    height: 90px;
+  }
+
+  .process-icon {
+    width: 70px;
+    height: 70px;
+  }
+
+  .process-step p {
+    font-size: 12px;
+  }
+}
